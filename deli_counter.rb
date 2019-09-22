@@ -1,4 +1,4 @@
-deli=[]
+$deli=[]
 
 def line(deli)
   line=[]
@@ -15,7 +15,7 @@ def line(deli)
 end
 
 def take_a_number(line,person)
-  deli<<person
+  $deli<<person
   puts "Welcome, #{person}. You are number #{line.length+1} in line."
 end
 
@@ -24,6 +24,6 @@ def now_serving(line)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{deli[0]}."
-    deli.shift
+    $deli.shift
   end
 end
