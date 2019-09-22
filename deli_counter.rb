@@ -13,4 +13,3 @@ def line(deli)
     print "\n"
   end
 end
-  
