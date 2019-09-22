@@ -10,7 +10,7 @@ def line(deli)
     deli.each_with_index do |name,position|
     print " #{position+1}. #{name}"
     end
+    print "\n"
   end
-  print "\n"
 end
   
