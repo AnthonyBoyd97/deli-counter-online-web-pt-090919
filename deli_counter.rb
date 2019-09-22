@@ -6,11 +6,11 @@ def line(deli)
     puts "The line is currently empty."
     return
   else
-    print "The line is currently"
+    string="The line is currently:"
     deli.each_with_index do |name,position|
-    print " #{position+1}. #{name}"
+    string+=" #{position+1}. #{name}"
     end
-    print "\n"
+    puts string
   end
 end
 
