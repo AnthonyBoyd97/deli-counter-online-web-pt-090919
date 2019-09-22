@@ -1,7 +1,6 @@
-$deli=[]
+deli=[]
 
 def line(deli)
-  line=[]
   if deli.length==0
     puts "The line is currently empty."
     return
@@ -14,16 +13,16 @@ def line(deli)
   end
 end
 
-def take_a_number(line,person)
-  $deli<<person
-  puts "Welcome, #{person}. You are number #{line.length+1} in line."
+def take_a_number(deli,person)
+  deli<<person
+  puts "Welcome, #{person}. You are number #{deli.length+1} in line."
 end
 
-def now_serving(line)
-  if line.length==0
+def now_serving(deli)
+  if deli.length==0
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{deli[0]}."
-    $deli.shift
+    deli.shift
   end
 end
